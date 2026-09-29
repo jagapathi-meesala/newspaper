@@ -1,0 +1,10 @@
+name: analyze-source
+description: Analyzes a given source text to determine its structure, sentiment, and basic attributes.
+input_schema:
+  type: object
+  properties:
+    source_text:
+      type: string
+      description: The raw text of the source to analyze
+  required:
+    - source_text

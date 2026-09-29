@@ -1,0 +1,10 @@
+name: extract-claims
+description: Isolates specific factual claims from a text.
+input_schema:
+  type: object
+  properties:
+    source_text:
+      type: string
+      description: The raw text of the source
+  required:
+    - source_text

@@ -1,0 +1,22 @@
+name: generate-research-report
+description: Compiles a structured markdown summary from collected data.
+input_schema:
+  type: object
+  properties:
+    topic:
+      type: string
+    sources:
+      type: array
+      items:
+        type: object
+    agreements:
+      type: array
+      items:
+        type: string
+    conflicts:
+      type: array
+      items:
+        type: object
+  required:
+    - topic
+    - sources

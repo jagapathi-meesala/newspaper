@@ -1,0 +1,22 @@
+name: news-research-agent
+version: 1.0.0
+description: An autonomous agent designed to research news topics, analyze sources, and extract factual claims transparently.
+spec_version: 0.1.0
+author: HiDevs Agent Passport Candidate
+license: MIT
+model:
+  preferred: gpt-4o
+  fallback:
+    - claude-3-5-sonnet-20240620
+  constraints:
+    temperature: 0.2
+    max_tokens: 4096
+tools:
+  - research-topic
+  - analyze-source
+  - compare-sources
+  - extract-claims
+  - generate-research-report
+metadata:
+  purpose: "News Research"
+  status: "active"

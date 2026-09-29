@@ -1,0 +1,10 @@
+name: research-topic
+description: Searches for a topic and returns relevant news sources or articles. Falls back to mock data if no live API keys are provided.
+input_schema:
+  type: object
+  properties:
+    topic:
+      type: string
+      description: The topic to research
+  required:
+    - topic

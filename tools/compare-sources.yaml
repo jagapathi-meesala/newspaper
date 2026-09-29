@@ -1,0 +1,18 @@
+name: compare-sources
+description: Takes multiple claims or sources and identifies conflicting claims or agreements.
+input_schema:
+  type: object
+  properties:
+    claims_a:
+      type: array
+      items:
+        type: string
+      description: First set of claims
+    claims_b:
+      type: array
+      items:
+        type: string
+      description: Second set of claims
+  required:
+    - claims_a
+    - claims_b
